@@ -1,0 +1,104 @@
+@charset "utf-8";
+/*这个是导航部分的代码,在上面的那个要加上分号,否则会出错*/
+.logo {
+  padding:0;
+}
+.navbar-ul {
+  margin-top:0px;
+}
+
+/*这个是资讯标题的部分*/
+.jumbotron {
+  background-image:url('../img/infomation-header.png');
+  margin:50px 0 0 0;
+  color:#ccc;
+}
+.jumbotron h1 {
+  font-size:26px;
+  padding:0 0 0 20px;
+}
+.jumbotron p {
+  font-size:15px;
+  padding:0 0 0 20px;
+}
+/*这个是关于的部分*/
+#about {
+  background:#eee;
+  padding:40px 15px;
+}
+#about a {
+  color:#0059b2;
+}
+#about h3 {
+  color:#333;
+  font-size:18px;
+  border-bottom:1px solid #eee;
+  padding:20px 0;
+  margin:0 0 10px 0;
+}
+#about p {
+  line-height:2;
+  font-size:13px;
+}
+#about .about {
+  background:#fff;
+}
+/*当BootStrap3版本是,因为默认是移动端,所以在前面的tab-h2的大小就要设置为20px
+,tab-p设置为15px,就是这个效果*/
+/*小屏幕(平板电脑,大于768)*/
+@media (min-width: 768px) {
+ .jumbotron h1 {
+  font-size:30px;
+}
+.jumbotron p {
+  font-size:16px;
+} 
+#about h3 {
+  font-size:20px;
+}
+#about p {
+  font-size:14px;
+}
+}
+
+/*中等屏幕,桌面显示器大于992*/
+@media (min-width: 992px){
+  .jumbotron h1 {
+  font-size:33px;
+}
+.jumbotron p {
+  font-size:18px;
+} 
+#about h3 {
+  font-size:22px;
+}
+#about p {
+  font-size:15px;
+}
+}
+
+/*大屏幕,大屏幕显示器,大于1200*/
+@media (min-width: 1200px){
+ .jumbotron h1 {
+  font-size:36px;
+}
+.jumbotron p {
+  font-size:20px;
+} 
+
+#about h3 {
+  font-size:26px;
+}
+#about p {
+  font-size:16px;
+}
+}
+
+
+/*这个是页脚的部分,响应式布局一般不写高度,应为会自动有高度,宽度也一般不用设置*/
+#footer {
+ color:#999;
+ text-align:center;
+ padding:20px;
+}
+

@@ -1,0 +1,118 @@
+@charset "utf-8";
+/*这个是导航部分的代码,在上面的那个要加上分号,否则会出错*/
+.logo {
+  padding:0;
+}
+.navbar-ul {
+  margin-top:0px;
+}
+
+/*这个是资讯标题的部分*/
+.jumbotron {
+  background-image:url('../img/infomation-header.png');
+  margin:50px 0 0 0;
+  color:#ccc;
+}
+.jumbotron h1 {
+  font-size:26px;
+  padding:0 0 0 20px;
+}
+.jumbotron p {
+  font-size:15px;
+  padding:0 0 0 20px;
+}
+/*这个是资讯的部分*/
+#info {
+  background:#eee;
+  padding:20px 0;
+}
+.info-content {
+  background:#fff;
+  margin:0 0 20px 0;
+  box-shadow:2px 2px 3px #ccc;
+}
+.info-content img {
+  margin:12px 0;
+}
+.info-content h4 {
+  color:#333;
+  font-size:14px;
+  padding:2px 0 0 0;
+}
+.info-content p {
+  line-height:1.6;
+  color:#999;
+}
+/*当BootStrap3版本是,因为默认是移动端,所以在前面的tab-h2的大小就要设置为20px
+,tab-p设置为15px,就是这个效果*/
+/*小屏幕(平板电脑,大于768)*/
+@media (min-width: 768px) {
+ .jumbotron h1 {
+  font-size:30px;
+}
+.jumbotron p {
+  font-size:16px;
+} 
+.info-content h4 {
+  font-size:16px;
+  /*这个是超过文本就隐藏*/
+  overflow:hidden;
+  /*这个只显示一行*/
+  white-space: nowrap;
+  /*这个是一行多了就用...显示*/
+  text-overflow:ellipsis;
+}
+}
+
+/*这个是文本有变得部分*/
+.info-right {
+  background:#fff;
+}
+.info-right blockquote {
+  padding:0px;
+  margin:0px;
+}
+.info-right blockquote h2 {
+  font-size:20px;
+  color:#666;
+  padding:5px;
+}
+.info-right h4 {
+  padding: 10px 0;
+  font-size:16px;
+}
+/*中等屏幕,桌面显示器大于992*/
+@media (min-width: 992px){
+  .jumbotron h1 {
+  font-size:33px;
+}
+.jumbotron p {
+  font-size:18px;
+} 
+.info-content h4 {
+  font-size:18px;
+}
+}
+
+/*大屏幕,大屏幕显示器,大于1200*/
+@media (min-width: 1200px){
+ .jumbotron h1 {
+  font-size:36px;
+}
+.jumbotron p {
+  font-size:20px;
+} 
+.info-content h4 {
+  font-size:20px;
+}
+
+}
+
+
+/*这个是页脚的部分,响应式布局一般不写高度,应为会自动有高度,宽度也一般不用设置*/
+#footer {
+ color:#999;
+ text-align:center;
+ padding:20px;
+}
+
